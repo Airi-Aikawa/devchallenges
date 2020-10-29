@@ -1,10 +1,11 @@
 <template>
-  <div class="hello">
+  <div class="badNews">
     <h1>{{ msg }}</h1>
+    <div class="message">
     <p>
       the page you are looking for might be removed or is temporarily unavailable
     </p>
-    
+    </div>
   </div>
 </template>
 
@@ -19,5 +20,22 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.badNews{
+color: #333333;
+position: absolute;
+width: 586px;
+height: 190px;
+left: 735px;
+top: 265px;
+font-family: Space Mono;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 95px;
+letter-spacing: -0.035em;
+}
+.message{
+  color: blue;
+}
 
 </style>

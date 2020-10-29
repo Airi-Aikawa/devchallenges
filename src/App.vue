@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Scarecrow" src="./assets/Scarecrow.png">
     <HelloWorld msg="I have bad news for you"/>
+    <button>BACK TO HOMEPAGE</button>
   </div>
 </template>
 
@@ -18,11 +19,10 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* position: absolute; */
+width: 216px;
+height: 68px;
+left: 740px;
+  margin-top: 663px;
 }
 </style>
