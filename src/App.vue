@@ -1,5 +1,7 @@
 <template>
-  <div id="app">
+
+  <div id="img">
+    <p>{{title}}</p>
     <img alt="Scarecrow" src="./assets/Scarecrow.png">
     <HelloWorld msg="I have bad news for you"/>
     <button>BACK TO HOMEPAGE</button>
@@ -10,6 +12,11 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
+  data:function(){
+    return{
+      title:'404 NOT FOUND'
+    }
+  },
   name: 'App',
   components: {
     HelloWorld
