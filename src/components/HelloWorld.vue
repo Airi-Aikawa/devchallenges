@@ -30,12 +30,23 @@ top: 265px;
 font-family: Space Mono;
 font-style: normal;
 font-weight: bold;
-font-size: 64px;
+font-size: 54px;
 line-height: 95px;
 letter-spacing: -0.035em;
 }
 .message{
-  color: blue;
+position: absolute;
+width: 381px;
+height: 108px;
+left: 736px;
+top: 491px;
+color:4F4F4F;
+font-family: Space Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: -0.035em;
 }
 
 </style>
