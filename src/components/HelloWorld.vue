@@ -23,11 +23,11 @@ export default {
 .badNews{
 color: #333333;
 position: absolute;
-width: 586px;
+width: 850px;
 height: 190px;
 left: 735px;
-top: 265px;
-font-family: Space Mono;
+top: 35px;
+font-family: "Space Mono";
 font-style: normal;
 font-weight: bold;
 font-size: 54px;
@@ -36,12 +36,12 @@ letter-spacing: -0.035em;
 }
 .message{
 position: absolute;
-width: 381px;
+width: 400px;
 height: 108px;
-left: 736px;
-top: 491px;
-color:4F4F4F;
-font-family: Space Mono;
+left: 36px;
+top: 291px;
+color:#4F4F4F;
+font-family: "Space Mono";
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
