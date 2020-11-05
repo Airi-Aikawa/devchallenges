@@ -1,12 +1,12 @@
 <template>
   <div>
-    <header class="header">{{title}}</header>
+    <header class="header">{{header}}</header>
     <div id = "img">
     <img alt="Scarecrow" src="./assets/Scarecrow.png" class="img">
     </div>
     <HelloWorld msg="I have bad news for you"/>
-    <button class= "button button-close">BACK TO HOMEPAGE</button>
-    <footer class="footer">Your name @ DevChallenge.io</footer>
+    <button class= "button">BACK TO HOMEPAGE</button>
+    <footer class="footer">{{footer}}</footer>
   </div>
     
 </template>
@@ -17,7 +17,8 @@ import HelloWorld from './components/HelloWorld.vue'
 export default {
   data:function(){
     return{
-      title:'404 NOT FOUND'
+      header:'404 NOT FOUND',
+      footer:'Your name @ DevChallenge.io'
     }
   },
   name: 'App',
@@ -28,13 +29,6 @@ export default {
 </script>
 
 <style scoped>
-#app {
-  /* position: absolute; */
-width: 216px;
-height: 68px;
-left: 740px;
-margin-top: 663px;
-}
 .header{
 color: #333333;
 position: absolute;
@@ -42,7 +36,7 @@ width: 200px;
 height: 25px;
 left: 77px;
 top: 40px;
-font-family: Inconsolata;
+font-family: "Inconsolata";
 font-style: normal;
 font-weight: bold;
 font-size: 24px;
@@ -57,7 +51,7 @@ position: absolute;
 width: 216px;
 height: 68px;
 left: 740px;
-top: 563px;
+top: 663px;
 background: #333333;
 }
 .img{
@@ -66,10 +60,6 @@ Height: 414.25px;
 Top :265px;
 Left :77px;
 position: absolute;
-left: 5.35%;
-right: 57.21%;
-top: 24.54%;
-bottom: 37.11%;
 }
 .footer{
 position: absolute;
@@ -77,14 +67,11 @@ width: 226px;
 height: 17px;
 left: 607px;
 top: 1024px;
-font-family: Montserrat;
+font-family: "Montserrat";
 font-style: normal;
 font-weight: 600;
 font-size: 14px;
 line-height: 17px;
-/* identical to box height */
-
-
 color: #333333;
 }
 </style>
