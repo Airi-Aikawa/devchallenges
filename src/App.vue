@@ -59,7 +59,7 @@ Width :539.22px;
 Height: 414.25px;
 Top :265px;
 Left :77px;
-position: absolute;
+position: relative;
 }
 .footer{
 position: absolute;

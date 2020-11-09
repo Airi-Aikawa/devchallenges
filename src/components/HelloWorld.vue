@@ -2,7 +2,10 @@
   <div >
     <p class="badNews">{{ msg }}</p>
     <div>
-    <p class="message">
+    <p class="messagepc">
+      the page you are looking for might be removed or is temporarily unavailable
+    </p>
+        <p class="messagesp">
       the page you are looking for might be removed or is temporarily unavailable
     </p>
     </div>
@@ -34,7 +37,8 @@ line-height: 95px;
 letter-spacing: -0.035em;
 color: #333333;
 }
-.message{
+@media screen and (min-width:961px) {
+.messagepc{
 position: absolute;
 width: 381px;
 height: 108px;
@@ -47,5 +51,20 @@ font-size: 24px;
 line-height: 36px;
 letter-spacing: -0.035em;
 }
+}
+@media only screen and (max-width: 375px){
+.messagesp{
+position: absolute;
+width: 200px;
+height: 108px;
+left: 736px;
+top: 491px;
+font-family: "Space Mono";
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: -0.035em;
+}}
 
 </style>
