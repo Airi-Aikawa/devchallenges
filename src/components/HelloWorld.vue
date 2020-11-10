@@ -1,70 +1,105 @@
 <template>
-  <div >
-    <p class="badNews">{{ msg }}</p>
+  <div>
+    <p class="badNewspc">{{ msg }}</p>
+    <p class="badNewssp">{{ msg }}</p>
     <div>
-    <p class="messagepc">
-      the page you are looking for might be removed or is temporarily unavailable
-    </p>
-        <p class="messagesp">
-      the page you are looking for might be removed or is temporarily unavailable
-    </p>
+      <p class="messagepc">
+        the page you are looking for might be removed or is temporarily
+        unavailable
+      </p>
+      <p class="messagesp">
+        the page you are looking for might be removed or is temporarily
+        unavailable
+      </p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.badNews{
-position: absolute;
-width: 586px;
-height: 190px;
-left: 735px;
-top: 265px;
-font-family: "Space Mono";
-font-style: normal;
-font-weight: bold;
-font-size: 64px;
-line-height: 95px;
-letter-spacing: -0.035em;
-color: #333333;
-}
-@media screen and (min-width:961px) {
-.messagepc{
-position: absolute;
-width: 381px;
-height: 108px;
-left: 736px;
-top: 491px;
-font-family: "Space Mono";
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: -0.035em;
-}
-}
-@media only screen and (max-width: 375px){
-.messagesp{
-position: absolute;
-width: 200px;
-height: 108px;
-left: 736px;
-top: 491px;
-font-family: "Space Mono";
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: -0.035em;
-}}
 
+@media screen and (min-width: 961px) {
+  .badNewspc {
+  display: block !important;
+}
+.badNewssp {
+  display: none !important;
+}
+  .badNewspc {
+    position: absolute;
+    width: 586px;
+    height: 190px;
+    left: 735px;
+    top: 265px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  }
+}
+@media screen and (min-width: 375px) {
+  .badNewssp {
+    position: absolute;
+    width: 350px;
+    height: 142px;
+    left: 24px;
+    top: 407px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  }
+}
+
+.messagepc {
+  display: block !important;
+}
+.messagesp {
+  display: none !important;
+}
+@media screen and (min-width: 961px) {
+  .messagepc {
+    position: absolute;
+    width: 381px;
+    height: 108px;
+    left: 736px;
+    top: 491px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .messagesp {
+    position: absolute;
+    width: 200px;
+    height: 108px;
+    left: 736px;
+    top: 491px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+  }
+}
 </style>
