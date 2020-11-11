@@ -38,7 +38,28 @@ export default {
 .headersp {
   display: none !important;
 }
-@media only screen and (max-width: 961px) {
+.buttonpc {
+  display: block !important;
+}
+.buttonsp {
+  display: none !important;
+}
+
+.imgpc {
+  display: block !important;
+}
+.imgsp {
+  display: none !important;
+}
+
+.footerpc {
+  display: block !important;
+}
+.footersp {
+  display: none !important;
+}
+
+@media screen and (max-width: 961px) {
   .headerpc {
     color: #333333;
     position: absolute;
@@ -54,8 +75,38 @@ export default {
     letter-spacing: -0.08em;
     text-transform: uppercase;
   }
+  .buttonpc {
+    color: #ffffff;
+    size: 14px;
+    position: absolute;
+    width: 216px;
+    height: 68px;
+    left: 740px;
+    top: 663px;
+    background: #333333;
+  }
+  .imgpc {
+    width: 539.22px;
+    height: 414.25px;
+    top: 265px;
+    left: 77px;
+    position: relative;
+  }
+  .footerpc {
+    position: absolute;
+    width: 226px;
+    height: 17px;
+    left: 607px;
+    top: 1024px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+  }
 }
-@media screen and (min-width: 375px) {
+@media only screen and (min-width: 375px) {
   .headersp {
     position: absolute;
     width: 133px;
@@ -71,26 +122,6 @@ export default {
     text-transform: uppercase;
     color: #333333;
   }
-}
-.buttonpc {
-  display: block !important;
-}
-.buttonsp {
-  display: none !important;
-}
-@media only screen and (max-width: 961px) {
-  .buttonpc {
-    color: #ffffff;
-    size: 14px;
-    position: absolute;
-    width: 216px;
-    height: 68px;
-    left: 740px;
-    top: 663px;
-    background: #333333;
-  }
-}
-@media screen and (min-width: 375px) {
   .buttonsp {
     color: #ffffff;
     size: 14px;
@@ -101,61 +132,20 @@ export default {
     top: 726px;
     background: #333333;
   }
-}
-.imgpc {
-  display: block !important;
-}
-.imgsp {
-  display: none !important;
-}
-
-@media only screen and (max-width: 961px) {
-  .imgpc {
-    width: 539.22px;
-    height: 414.25px;
-    top: 265px;
-    left: 77px;
-    position: relative;
-  }
-}
-@media screen and (min-width: 375px) {
   .imgsp {
     width: 286.83px;
     height: 220.35px;
     top: 109px;
     left: 44px;
+    position: relative;
   }
-}
-.footerpc {
-  display: block !important;
-}
-.footersp {
-  display: none !important;
-}
-
-@media only screen and (max-width: 961px) {
-  .footerpc {
-    position: absolute;
-    width: 226px;
-    height: 17px;
-    left: 607px;
-    top: 1024px;
-    font-family: "Montserrat";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #333333;
-  }
-}
-@media screen and (min-width: 375px) {
   .footersp {
     position: absolute;
     width: 226px;
     height: 17px;
     left: 75px;
     top: 890px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 14px;

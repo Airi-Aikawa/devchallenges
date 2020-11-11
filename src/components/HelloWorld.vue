@@ -26,14 +26,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-@media screen and (min-width: 961px) {
-  .badNewspc {
+.badNewspc {
   display: block !important;
 }
 .badNewssp {
   display: none !important;
 }
+.messagepc {
+  display: block !important;
+}
+.messagesp {
+  display: none !important;
+}
+@media screen and (min-width: 961px) {
   .badNewspc {
     position: absolute;
     width: 586px;
@@ -48,31 +53,6 @@ export default {
     letter-spacing: -0.035em;
     color: #333333;
   }
-}
-@media screen and (min-width: 375px) {
-  .badNewssp {
-    position: absolute;
-    width: 350px;
-    height: 142px;
-    left: 24px;
-    top: 407px;
-    font-family: "Space Mono";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 71px;
-    letter-spacing: -0.035em;
-    color: #333333;
-  }
-}
-
-.messagepc {
-  display: block !important;
-}
-.messagesp {
-  display: none !important;
-}
-@media screen and (min-width: 961px) {
   .messagepc {
     position: absolute;
     width: 381px;
@@ -87,7 +67,21 @@ export default {
     letter-spacing: -0.035em;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 375px) {
+  .badNewssp {
+    position: absolute;
+    width: 350px;
+    height: 142px;
+    left: 24px;
+    top: 407px;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 71px;
+    letter-spacing: -0.035em;
+    color: #333333;
+  }
   .messagesp {
     position: absolute;
     width: 200px;
