@@ -25,7 +25,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 .badNewspc {
   display: block !important;
 }
@@ -38,7 +38,7 @@ export default {
 .messagesp {
   display: none !important;
 }
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 781px) {
   .badNewspc {
     position: absolute;
     width: 586px;
@@ -67,7 +67,7 @@ export default {
     letter-spacing: -0.035em;
   }
 }
-@media only screen and (min-width: 375px) {
+@media screen and (max-width: 480px) {
   .badNewssp {
     position: absolute;
     width: 350px;

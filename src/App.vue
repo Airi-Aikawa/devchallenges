@@ -3,8 +3,8 @@
     <header class="headerpc">{{ header }}</header>
     <header class="headersp">{{ header }}</header>
     <div id="img">
-      <img alt="Scarecrow" src="./assets/Scarecrow.png" class="imgpc" />
-      <img alt="Scarecrow" src="./assets/Scarecrow.png" class="imgsp" />
+      <img class="imgpc" alt="Scarecrow" src="./assets/Scarecrow.png"  />
+      <img class="imgsp" alt="Scarecrow" src="./assets/Scarecrow.png"  />
     </div>
     <HelloWorld msg="I have bad news for you" />
     <button class="buttonpc">BACK TO HOMEPAGE</button>
@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .headerpc {
   display: block !important;
 }
@@ -59,11 +59,11 @@ export default {
   display: none !important;
 }
 
-@media screen and (max-width: 961px) {
+@media screen and (min-width: 781px) {
   .headerpc {
     color: #333333;
     position: absolute;
-    width: 200px;
+    width: 133px;
     height: 25px;
     left: 77px;
     top: 40px;
@@ -106,7 +106,7 @@ export default {
     color: #333333;
   }
 }
-@media only screen and (min-width: 375px) {
+@media screen and (max-width: 480px) {
   .headersp {
     position: absolute;
     width: 133px;
