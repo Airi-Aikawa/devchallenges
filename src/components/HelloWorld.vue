@@ -1,13 +1,9 @@
 <template>
   <div>
-    <p class="badNewspc">{{ msg }}</p>
-    <p class="badNewssp">{{ msg }}</p>
+    <p class="badNews">{{ msg }}</p>
+
     <div>
-      <p class="messagepc">
-        the page you are looking for might be removed or is temporarily
-        unavailable
-      </p>
-      <p class="messagesp">
+      <p class="message">
         the page you are looking for might be removed or is temporarily
         unavailable
       </p>
@@ -26,20 +22,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.badNewspc {
-  display: block !important;
-}
-.badNewssp {
-  display: none !important;
-}
-.messagepc {
-  display: block !important;
-}
-.messagesp {
-  display: none !important;
-}
 @media screen and (min-width: 781px) {
-  .badNewspc {
+  .badNews {
     position: absolute;
     width: 586px;
     height: 190px;
@@ -53,7 +37,7 @@ export default {
     letter-spacing: -0.035em;
     color: #333333;
   }
-  .messagepc {
+  .message {
     position: absolute;
     width: 381px;
     height: 108px;
@@ -67,8 +51,8 @@ export default {
     letter-spacing: -0.035em;
   }
 }
-@media screen and (max-width: 480px) {
-  .badNewssp {
+@media screen and (max-width: 780px) {
+  .badNews {
     position: absolute;
     width: 350px;
     height: 142px;
@@ -82,18 +66,19 @@ export default {
     letter-spacing: -0.035em;
     color: #333333;
   }
-  .messagesp {
+  .message {
     position: absolute;
-    width: 200px;
-    height: 108px;
-    left: 736px;
-    top: 491px;
+    width: 328px;
+    height: 81px;
+    left: 23px;
+    top: 578px;
     font-family: "Space Mono";
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 27px;
     letter-spacing: -0.035em;
+    color: #4F4F4F;
   }
 }
 </style>

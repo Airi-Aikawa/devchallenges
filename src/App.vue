@@ -1,16 +1,14 @@
 <template>
   <div>
-    <header class="headerpc">{{ header }}</header>
-    <header class="headersp">{{ header }}</header>
+    <header class="header">{{ header }}</header>
+
     <div id="img">
-      <img class="imgpc" alt="Scarecrow" src="./assets/Scarecrow.png"  />
-      <img class="imgsp" alt="Scarecrow" src="./assets/Scarecrow.png"  />
+      <img class="img" alt="Scarecrow" src="./assets/Scarecrow.png" />
     </div>
     <HelloWorld msg="I have bad news for you" />
-    <button class="buttonpc">BACK TO HOMEPAGE</button>
-    <button class="buttonsp">BACK TO HOMEPAGE</button>
-    <footer class="footerpc">{{ footer }}</footer>
-    <footer class="footersp">{{ footer }}</footer>
+    <button class="button">BACK TO HOMEPAGE</button>
+
+    <footer class="footer">{{ footer }}</footer>
   </div>
 </template>
 
@@ -32,36 +30,10 @@ export default {
 </script>
 
 <style>
-.headerpc {
-  display: block !important;
-}
-.headersp {
-  display: none !important;
-}
-.buttonpc {
-  display: block !important;
-}
-.buttonsp {
-  display: none !important;
-}
-
-.imgpc {
-  display: block !important;
-}
-.imgsp {
-  display: none !important;
-}
-
-.footerpc {
-  display: block !important;
-}
-.footersp {
-  display: none !important;
-}
-
 @media screen and (min-width: 781px) {
-  .headerpc {
+  .header {
     color: #333333;
+    white-space: nowrap;
     position: absolute;
     width: 133px;
     height: 25px;
@@ -75,7 +47,7 @@ export default {
     letter-spacing: -0.08em;
     text-transform: uppercase;
   }
-  .buttonpc {
+  .button {
     color: #ffffff;
     size: 14px;
     position: absolute;
@@ -85,14 +57,14 @@ export default {
     top: 663px;
     background: #333333;
   }
-  .imgpc {
+  .img {
     width: 539.22px;
     height: 414.25px;
     top: 265px;
     left: 77px;
-    position: relative;
+    position: absolute;
   }
-  .footerpc {
+  .footer {
     position: absolute;
     width: 226px;
     height: 17px;
@@ -106,9 +78,10 @@ export default {
     color: #333333;
   }
 }
-@media screen and (max-width: 480px) {
-  .headersp {
+@media screen and (max-width: 780px) {
+  .header {
     position: absolute;
+    white-space: nowrap;
     width: 133px;
     height: 25px;
     left: 24px;
@@ -122,7 +95,7 @@ export default {
     text-transform: uppercase;
     color: #333333;
   }
-  .buttonsp {
+  .button {
     color: #ffffff;
     size: 14px;
     position: absolute;
@@ -132,14 +105,14 @@ export default {
     top: 726px;
     background: #333333;
   }
-  .imgsp {
+  .img {
     width: 286.83px;
     height: 220.35px;
     top: 109px;
     left: 44px;
-    position: relative;
+    position: absolute;
   }
-  .footersp {
+  .footer {
     position: absolute;
     width: 226px;
     height: 17px;
